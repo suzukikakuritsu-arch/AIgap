@@ -1,0 +1,17 @@
+# LinkedIn最新完全実績（再計算）
+total_impressions = 230_528      # 公式データ
+total_reach = 83_223            # ユニークメンバー
+period_days = 90                # 11/28-2/25
+
+# 基本統計
+active_impressions_per_day = total_impressions / 62  # 有効日数
+avg_daily_reach = total_reach / 62
+reach_impression_ratio = total_reach / total_impressions  # 36%
+
+print("🔥 LinkedIn最新完全統計")
+print(f"総期間: 2025/11/28 - 2026/02/25 ({period_days}日)")
+print(f"総インプレッション: {total_impressions:,}")
+print(f"総リーチメンバー: {total_reach:,}")
+print(f"平均1日インプレッション: {active_impressions_per_day:.0f}")
+print(f"リーチ/インプレッション比: {reach_impression_ratio:.1%}")
+print(f"エンゲージメント換算: {total_impressions * 0.0287:.0f}")  # 前回率2.87%
